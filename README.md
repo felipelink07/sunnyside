@@ -11,7 +11,7 @@ Esse é um projeto front-end de uma land page de uma gência ficticia chamada Su
 
 **Obs:Esse projeto ainda está em desenvolvimento**
 
-## O Objetivo
+## O Objetivo 🚀
 
 Construir essa landing page sendo fiel ao design entregue.
 
