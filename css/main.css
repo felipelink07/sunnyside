@@ -1,0 +1,338 @@
+/*=============================================
+=            Color variables            =
+=============================================*/
+/*=====  End of Color variables  ======*/
+/*=============================================
+=            Font Import            =
+=============================================*/
+/* Font for titles */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+/* Font for texts */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@700;900&display=swap");
+/*=====  End of Font Import  ======*/
+/*=============================================
+=            Variables            =
+=============================================*/
+/*=====  End of Variables  ======*/
+/*=============================================
+=            Base Style            =
+=============================================*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+}
+
+h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #a7abae;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  color: #23303e;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+}
+
+/*=====  End of Base Style  ======*/
+/*=============================================
+=            Reausable classes            =
+=============================================*/
+/*=====  End of Reausable classes  ======*/
+/*=============================================
+=            Links Style            =
+=============================================*/
+.cta-btn-yellow {
+  position: relative;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #23303e;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+.cta-btn-yellow::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 10px;
+  background-color: #fad400;
+  border-radius: 5px;
+  z-index: -10;
+}
+
+.cta-btn-red {
+  position: relative;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #23303e;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+.cta-btn-red::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 10px;
+  background-color: #fe7867;
+  border-radius: 5px;
+  z-index: -10;
+}
+
+/*=====  End of Links Style  ======*/
+/*=============================================
+=            Header Styles            =
+=============================================*/
+.header {
+  height: 600px;
+  background: url("/images/desktop/image-header.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  padding: 1rem 2rem;
+}
+
+.main-nav {
+  display: none;
+}
+.main-nav li {
+  margin: 0 0.5rem;
+}
+.main-nav li a {
+  color: #ffffff;
+}
+
+.toggle {
+  color: #ffffff;
+  font-size: 2rem;
+}
+.toggle:hover {
+  cursor: pointer;
+}
+
+.header h2 {
+  color: #ffffff;
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+}
+
+/*=====  End of Header Styles  ======*/
+/*=============================================
+=       Section content Styles classes           =
+=============================================*/
+.content {
+  height: 600px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content p {
+  font-size: 1.5rem;
+  line-height: 150%;
+  font-weight: 600;
+  color: #818498;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/*=====  End of Section content Styles  ======*/
+/*=============================================
+=            Transform-brand Styles            =
+=============================================*/
+/*=====  End of Transform-brand Styles  ======*/
+/*=============================================
+=            Stand out Styles            =
+=============================================*/
+/*=====  End of Stand out Styles  ======*/
+/*=============================================
+=            Graphic design Styles            =
+=============================================*/
+.graphic-desing {
+  padding: 26rem 2rem 5rem 2rem;
+  background: url("/images/desktop/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.graphic-desing h3 {
+  color: #25564b;
+}
+.graphic-desing p {
+  color: #25564b;
+  line-height: 140%;
+}
+
+/*=====  End of Graphic design Styles  ======*/
+/*=============================================
+=            Photographty Styles            =
+=============================================*/
+.photography {
+  padding: 26rem 2rem 5rem 2rem;
+  background: url("/images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.photography h3 {
+  color: #19536b;
+}
+.photography p {
+  color: #19536b;
+}
+
+/*=====  End of Photographty Styles  ======*/
+/*=============================================
+=            Testimonials            =
+=============================================*/
+.testimonials {
+  padding: 2.5rem;
+}
+
+.testimonials__person {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.testimonials__person .person-photo {
+  border-radius: 50%;
+  width: 130px;
+}
+.testimonials__person .person-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #5a636c;
+  margin: 3rem 0;
+}
+.testimonials__person .person-name {
+  color: #23303e;
+  font-weight: 900;
+  font-size: 1.5rem;
+  font-family: "Fraunces", serif;
+  margin-bottom: 1rem;
+}
+.testimonials__person .person-occupation {
+  color: #a7abae;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/*=====  End of Testimonials  ======*/
+/*=============================================
+=            Food Grid            =
+=============================================*/
+.food-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.food-grid__item {
+  width: 50%;
+}
+
+/*=====  End of Food Grid  ======*/
+/*=============================================
+=            Footer            =
+=============================================*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 2rem;
+  background-color: #8FD9A8;
+}
+footer h3 {
+  font-weight: 900;
+}
+
+.footer-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+.footer-nav a {
+  display: block;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  color: #25564b;
+  text-decoration: none;
+}
+
+.social-nav {
+  margin: 1rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.social-nav a {
+  display: block;
+  font-size: 34px;
+  color: #25564b;
+  text-decoration: none;
+}
+
+.attribution a {
+  color: #25564b;
+}
+
+/*=====  End of Footer  ======*/
