@@ -1,3 +1,6 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/felipelink07/sunnyside?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/felipelink07/sunnyside?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/felipelink07/sunnyside?style=flat-square)
 # Frontend Mentor - Sunnyside agency landing page
 
 ![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)
