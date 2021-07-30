@@ -4,17 +4,17 @@
 
 ## Bem vindo! 👋
 
-Thanks for checking out this front-end coding challenge.
+Esse é um projeto front-end de uma land page de uma gência ficticia chamada Sunnyside
 
-## The challenge
+**Obs:Esse projeto ainda está em desenvolvimento**
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+## O Objetivo
 
-This challenge focuses mostly on HTML & CSS. There's a **tiny bit of JS included** for the mobile navigation toggle. But you could also choose to do this without JS!
+Construir essa landing page sendo fiel ao design entregue.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Esse projeto tem foco maior em HTML e CSS. Existe um pouco de Java Script para criação do menu mobile.
 
-Your users should be able to:
+O usuários da página deve poder:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- Ver as informações da página, imagens independente da resolução ou dispositivo.
+- Alguns elementos tem efeitos ao passar o mouse, como icones de menu ou redes socias.
