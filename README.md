@@ -21,3 +21,5 @@ O usuários da página deve poder:
 
 - Ver as informações da página, imagens independente da resolução ou dispositivo.
 - Alguns elementos tem efeitos ao passar o mouse, como icones de menu ou redes socias.
+
+🔗[**Acessar a página online**](https://sunnyside-exercise.netlify.app/)
