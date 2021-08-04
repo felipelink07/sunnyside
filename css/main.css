@@ -100,15 +100,29 @@ p {
 =            Reusable classes            =
 =============================================*/
 .link-contact {
-  background-color: white;
-  padding: 1rem 2rem;
+  background-color: #fad400;
+  padding: 1rem;
   border-radius: 2rem;
   color: black !important;
   font-family: "Fraunces", serif;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  display: block;
+  margin-top: 2rem;
+  font-size: 1rem !important;
 }
 
+@media (min-width: 900px) {
+  .link-contact {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: black !important;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    font-size: 0.9rem !important;
+    margin-top: 0;
+  }
+}
 /*=====  End of Reusable classes  ======*/
 /*=============================================
 =            Header Styles            =
@@ -136,17 +150,24 @@ p {
           align-items: center;
   height: 80px;
   padding: 1rem 2rem;
+  position: relative;
 }
 
 .main-nav {
   display: none;
+  position: absolute;
+  top: 6rem;
+  padding: 3rem 9rem;
+  background-color: white;
+  text-align: center;
 }
 .main-nav li {
-  margin: 0 0.5rem;
+  margin: 1rem 0.5rem;
 }
 .main-nav li a {
-  color: #ffffff;
+  color: black;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .toggle {
@@ -179,12 +200,19 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main-nav li {
     margin: 0 1.5rem;
   }
   .main-nav li a {
     color: #ffffff;
+    font-size: 1.1rem;
   }
 
   .toggle {
