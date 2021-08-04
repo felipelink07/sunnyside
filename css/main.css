@@ -157,7 +157,9 @@ p {
   display: none;
   position: absolute;
   top: 6rem;
-  padding: 3rem 9rem;
+  left: 2.7rem;
+  width: 350px;
+  padding: 3rem;
   background-color: white;
   text-align: center;
 }
@@ -213,6 +215,10 @@ p {
   .main-nav li a {
     color: #ffffff;
     font-size: 1.1rem;
+  }
+
+  .hide {
+    display: none;
   }
 
   .toggle {
