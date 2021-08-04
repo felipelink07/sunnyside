@@ -97,6 +97,20 @@ p {
 
 /*=====  End of Links Style  ======*/
 /*=============================================
+=            Reusable classes            =
+=============================================*/
+.link-contact {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  color: black !important;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/*=====  End of Reusable classes  ======*/
+/*=============================================
 =            Header Styles            =
 =============================================*/
 .header {
@@ -104,6 +118,10 @@ p {
   background: url("/images/desktop/image-header.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+.logo {
+  width: 40%;
 }
 
 .header__nav {
@@ -128,6 +146,7 @@ p {
 }
 .main-nav li a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .toggle {
@@ -146,6 +165,36 @@ p {
   text-align: center;
 }
 
+/* Header Media Queries */
+@media (min-width: 900px) {
+  .logo {
+    width: 10%;
+  }
+
+  .header__nav {
+    padding: 2rem 5rem 0 5rem;
+  }
+
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-nav li {
+    margin: 0 1.5rem;
+  }
+  .main-nav li a {
+    color: #ffffff;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .header h2 {
+    margin-top: 5rem;
+  }
+}
 /*=====  End of Header Styles  ======*/
 /*=============================================
 =       Section content Styles classes           =
@@ -181,11 +230,52 @@ p {
 /*=============================================
 =            Transform-brand Styles            =
 =============================================*/
+.flex-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+}
+
+@media (min-width: 900px) {
+  .topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topic img {
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+    height: auto;
+    padding: 11rem;
+  }
+}
 /*=====  End of Transform-brand Styles  ======*/
 /*=============================================
 =            Stand out Styles            =
 =============================================*/
+@media (min-width: 900px) {
+  .topic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 /*=====  End of Stand out Styles  ======*/
+/*=============================================
+=            Features Styles            =
+=============================================*/
+@media (min-width: 900px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*=====  End of Features Styles  ======*/
 /*=============================================
 =            Graphic design Styles            =
 =============================================*/
@@ -203,6 +293,11 @@ p {
   line-height: 140%;
 }
 
+@media (min-width: 900px) {
+  .graphic-desing p {
+    padding: 0 10rem;
+  }
+}
 /*=====  End of Graphic design Styles  ======*/
 /*=============================================
 =            Photographty Styles            =
@@ -220,11 +315,23 @@ p {
   color: #19536b;
 }
 
+@media (min-width: 900px) {
+  .photography p {
+    padding: 0 9rem;
+  }
+}
 /*=====  End of Photographty Styles  ======*/
 /*=============================================
 =            Testimonials            =
 =============================================*/
 .testimonials {
+  padding-top: 4rem;
+}
+.testimonials h2 {
+  font-size: 1.5rem;
+}
+
+.testimonials__grid {
   padding: 2.5rem;
 }
 
@@ -255,6 +362,17 @@ p {
   font-size: 1.1rem;
 }
 
+@media (min-width: 900px) {
+  .testimonials__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .person-text {
+    padding: 0 4rem;
+  }
+}
 /*=====  End of Testimonials  ======*/
 /*=============================================
 =            Food Grid            =
@@ -273,6 +391,12 @@ p {
   width: 50%;
 }
 
+@media (min-width: 900px) {
+  .food-grid {
+    -ms-flex-flow: nowrap;
+        flex-flow: nowrap;
+  }
+}
 /*=====  End of Food Grid  ======*/
 /*=============================================
 =            Footer            =

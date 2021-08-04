@@ -2,16 +2,39 @@
 @import 'fonts';
 
 
+
+/*=============================================
+=            Reusable classes            =
+=============================================*/
+
+.link-contact{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: black !important;
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+/*=====  End of Reusable classes  ======*/
+
+
+
+
 /*=============================================
 =            Header Styles            =
 =============================================*/
 
 .header{
-
     height: 600px;
     background: url('/images/desktop/image-header.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.logo{
+    width: 40%;
 }
 
 .header__nav{
@@ -29,6 +52,7 @@
         margin: 0 0.5rem;
         & a{
             color: $white;
+            text-decoration: none;
         }
     }
 }
@@ -47,6 +71,39 @@
     font-size: 3.5rem;
     letter-spacing: 0.5rem;
     text-align: center;
+}
+
+
+
+/* Header Media Queries */
+
+@media (min-width: 900px){
+
+    .logo{
+        width: 10%;
+    }
+
+    .header__nav{
+        padding: 2rem 5rem 0 5rem;
+    }
+    
+    .main-nav{
+        display: flex;
+        & li{
+            margin: 0 1.5rem;
+            & a{
+                color: $white;
+            }
+        }
+    }
+
+    .toggle{
+        display: none;
+    }
+
+    .header h2{
+        margin-top: 5rem;
+    }
 }
 
 
@@ -83,6 +140,27 @@
 =            Transform-brand Styles            =
 =============================================*/
 
+.flex-reverse{
+    flex-flow: row-reverse;
+}
+
+@media (min-width: 900px) {
+    .topic{
+        display: flex;
+
+        & img{
+            width: 50%;
+        }
+
+    }
+
+    .content{
+        width: 50%;
+        height: auto;
+        padding: 11rem;
+        
+    }
+}
 
 
 /*=====  End of Transform-brand Styles  ======*/
@@ -95,8 +173,33 @@
 =============================================*/
 
 
+@media (min-width: 900px) {
+    .topic{
+        display: flex;
+    }
+}
+
 
 /*=====  End of Stand out Styles  ======*/
+
+
+
+
+/*=============================================
+=            Features Styles            =
+=============================================*/
+
+@media (min-width: 900px) {
+    .features{
+        display: flex;
+    }
+}
+
+
+
+/*=====  End of Features Styles  ======*/
+
+
 
 
 
@@ -116,6 +219,12 @@
     & p{
         color: $dark-desaturated-cyan;
         line-height: 140%;
+    }
+}
+
+@media (min-width: 900px){
+    .graphic-desing p{
+        padding: 0 10rem;
     }
 }
 
@@ -140,6 +249,12 @@
     }
 }
 
+@media (min-width: 900px){
+    .photography p{
+        padding: 0 9rem;
+    }
+}
+
 /*=====  End of Photographty Styles  ======*/
 
 
@@ -148,6 +263,14 @@
 =============================================*/
 
 .testimonials{
+    padding-top: 4rem;
+
+    & h2{
+        font-size: 1.5rem;
+    }
+}
+
+.testimonials__grid{
     padding: 2.5rem;
 }
 
@@ -183,6 +306,17 @@
     
 }
 
+
+@media (min-width: 900px) {
+    .testimonials__grid{
+        display: flex;
+    }
+
+    .person-text{
+        padding: 0 4rem;
+    }
+}
+
 /*=====  End of Testimonials  ======*/
 
 
@@ -197,6 +331,12 @@
 
 .food-grid__item{
     width: 50%;
+}
+
+@media (min-width: 900px){
+    .food-grid{
+        flex-flow: nowrap;
+    }
 }
 
 /*=====  End of Food Grid  ======*/

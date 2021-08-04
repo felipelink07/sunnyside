@@ -19,19 +19,19 @@
 <body>
   <header class="header">
     <nav class="header__nav">
-      <div class="logo">Sunnyside</div>
+      <img src="/images/logo.svg" class="logo" alt="logo do site">
       <ul class="main-nav">
-        <li><a src="#">About</a></li>
-        <li><a src="#">Services</a></li>
-        <li><a src="#">Projects</a></li>
-        <li><a src="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#" class="link-contact">Contact</a></li>
       </ul>
       <div class="toggle"><i class="ri-menu-fill"></i></div>
     </nav>
   <h2>WE ARE CREATIVE</h2>
 </header>
 
-  <section>
+  <section class="topic flex-reverse">
     <img src="/images/mobile/image-transform.jpg" alt="">
     <div class="transform-brand content">
       <h3>Transform your brand</h3>
@@ -45,7 +45,7 @@
     </div>
   </section>
 
- <section>
+ <section class="topic">
  
   <img src="/images/mobile/image-stand-out.jpg" alt="">
  
@@ -59,41 +59,49 @@
  
   </section>
 
-  <section class="content graphic-desing">
-    <h3>Graphic design</h3>
-    <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-  </section>
+  <div class="features">
+    <section class="content graphic-desing">
+      <h3>Graphic design</h3>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </section>
+  
+    <section class="content photography">
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    
+    </section>
+  </div>
 
-  <section class="content photography">
-    <h3>Photography</h3>
-    <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-  </section>
+<!--Testimonials-->
 
-  <section class="testimonials">
-    <h2>Client testimonials</h2>
-  
-    <div class="testimonials__person">
-      <img src="/images/image-emily.jpg" class="person-photo" alt="">
-      <p class="person-text">
-        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p class="person-name">Emily R.</p>
-      <p class="person-occupation">Marketing Director</p>
-    </div>
-  
-   <div class="testimonials__person">
-     <img src="/images/image-thomas.jpg" class="person-photo" alt="">
-      <p class="person-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-      <p class="person-name">Thomas S.</p>
-      <p class="person-occupation">Chief Operating Officer</>
-   </div>
-  
-    <div class="testimonials__person">
-      <img src="/images/image-jennie.jpg" class="person-photo" alt="">
-      <p class="person-text">
-        Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!      </p>
-        <p class="person-name">Jennie F.</p>
-      <p class="person-occupation">Business Owner</>
-    </div>
+    <section class="testimonials">
+    
+      <h2>Client testimonials</h2>
+    
+      <div class="testimonials__grid">
+        <div class="testimonials__person">
+        <img src="/images/image-emily.jpg" class="person-photo" alt="">
+        <p class="person-text">
+          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="person-name">Emily R.</p>
+        <p class="person-occupation">Marketing Director</p>
+      </div>
+    
+     <div class="testimonials__person">
+       <img src="/images/image-thomas.jpg" class="person-photo" alt="">
+        <p class="person-text">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p class="person-name">Thomas S.</p>
+        <p class="person-occupation">Chief Operating Officer</>
+     </div>
+    
+      <div class="testimonials__person">
+        <img src="/images/image-jennie.jpg" class="person-photo" alt="">
+        <p class="person-text">
+          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!      </p>
+          <p class="person-name">Jennie F.</p>
+        <p class="person-occupation">Business Owner</>
+      </div>
+      </div>
   </section>
 
   <section class="food-grid">
