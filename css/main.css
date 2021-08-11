@@ -132,6 +132,7 @@ p {
   background: url("/images/desktop/image-header.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
+  position: relative;
 }
 
 .logo {
@@ -150,18 +151,17 @@ p {
           align-items: center;
   height: 80px;
   padding: 1rem 2rem;
-  position: relative;
 }
 
 .main-nav {
-  display: none;
   position: absolute;
-  top: 6rem;
-  left: 2.7rem;
-  width: 350px;
+  display: none;
   padding: 3rem;
   background-color: white;
   text-align: center;
+  top: 5rem;
+  left: 5%;
+  width: 90%;
 }
 .main-nav li {
   margin: 1rem 0.5rem;
