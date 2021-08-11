@@ -183,22 +183,44 @@ p {
 .header h2 {
   color: #ffffff;
   margin-top: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.5rem;
   text-align: center;
 }
 
 /* Header Media Queries */
-@media (min-width: 900px) {
+@media (min-width: 800px) {
+  .header__nav {
+    padding: 4rem 3rem 2rem 3rem;
+  }
+
+  .header h2 {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .main-nav {
+    top: 8rem;
+  }
+}
+@media (min-width: 1200px) {
   .logo {
     width: 10%;
   }
 
   .header__nav {
-    padding: 2rem 13rem 0 5rem;
+    padding: 2rem 3rem 0 5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .main-nav {
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -208,13 +230,16 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .main-nav li {
     margin: 0 1.5rem;
   }
   .main-nav li a {
     color: #ffffff;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .hide {
@@ -227,6 +252,20 @@ p {
 
   .header h2 {
     margin-top: 5rem;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1600px) {
+  .main-nav {
+    width: 30%;
+  }
+  .main-nav li a {
+    font-size: 1.2rem;
+  }
+
+  .header h2 {
+    margin-top: 7rem;
+    font-size: 4.5rem;
   }
 }
 /*=====  End of Header Styles  ======*/
@@ -302,11 +341,15 @@ p {
 /*=============================================
 =            Features Styles            =
 =============================================*/
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
   }
 }
 /*=====  End of Features Styles  ======*/
@@ -327,7 +370,7 @@ p {
   line-height: 140%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .graphic-desing p {
     padding: 0 10rem;
   }
@@ -396,7 +439,11 @@ p {
   font-size: 1.1rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
+  .testimonials {
+    padding: 4rem 4rem;
+  }
+
   .testimonials__grid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -405,6 +452,16 @@ p {
 
   .person-text {
     padding: 0 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials {
+    padding: 4rem 4rem;
+  }
+}
+@media (min-width: 1600px) {
+  .testimonials {
+    padding: 7rem 4rem 2rem 4rem;
   }
 }
 /*=====  End of Testimonials  ======*/
@@ -425,10 +482,16 @@ p {
   width: 50%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .food-grid {
-    -ms-flex-flow: nowrap;
-        flex-flow: nowrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .food-grid__item {
+    width: 100%;
   }
 }
 /*=====  End of Food Grid  ======*/
